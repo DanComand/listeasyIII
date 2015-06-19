@@ -4,7 +4,7 @@ class ListingsController < ApplicationController
 	end
 
 	def show
-		@Listing = Listing.find(params[:id])
+		@listing = Listing.find(params[:id])
 	end
 
 	def new
@@ -23,7 +23,7 @@ class ListingsController < ApplicationController
 		else
 			render :new
 		end
-		
+
 	end
 
 	def destroy
